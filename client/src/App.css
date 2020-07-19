@@ -13,17 +13,6 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +24,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Body{
+  min-height: 100vh;
+  background-color: #202020;
+  width: 100%;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.card{
+  background-color: rgb(219, 46, 89);
+  border-radius: 3px;
+  margin-right: 5px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.CardContainer {
+  width : 500px;
+  height: 100%;
+  margin-top: 20px;
+  background-color: #202020;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #202020;
 }
