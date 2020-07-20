@@ -85,7 +85,15 @@ function Game(){
 
 	return(
 		<div className="Body">
-			<h3>Play Now !</h3>
+			<h2>Play Now !</h2>
+			<div className="ButtonArea">
+				<button className="Button mr-2" onClick={()=>solve()}>Solve</button>
+				<button className="Button mr-2 Yellow" onClick={()=>clear()}>Clear</button>
+				<div className="Validate">
+					<button className="Button" onClick={()=>validation()}>Validate</button>
+					<input type="text" className="ValidationBox ml-2" value={status}></input>
+				</div>
+			</div>
 			<div className="Board">
 				{initialBoard.map((row,rowindex)=>{
 					return row.map((col,colindex)=>{
@@ -103,12 +111,7 @@ function Game(){
 				}
 			</div>
 			<div className="ButtonArea">
-				<button className="Button mr-2" onClick={()=>solve()}>Solve</button>
-				<button className="Button mr-2" onClick={()=>clear()}>Clear</button>
-				<div className="Validate">
-					<button className="Button" onClick={()=>validation()}>Validate</button>
-					<input type="text" className="ValidationBox ml-2" value={status}></input>
-				</div>
+				<Link to={"/"}><button className="Button Yellow">Back Home</button></Link>
 			</div>
 		</div>
 	)

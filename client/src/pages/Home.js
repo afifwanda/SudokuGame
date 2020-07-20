@@ -10,7 +10,7 @@ function Home(){
   useEffect(()=>{
     dispatch(getBoard())
   },[dispatch])
-  
+
   return(
     <div className="Body">
       <h1>Welcome to sudoku !</h1>
@@ -18,11 +18,11 @@ function Home(){
       <div className="CardContainer">
         {listBoard.map((element)=>{
           return <Link to={`/game/${element.id}`}> 
-          <div className="Card">{element.name}</div>
+          <button className="Card">{element.name}</button>
           </Link>
         })}
       </div>
-      <div className="AddButton">Add Board</div>
+      <Link to={"/add"}><button className="AddButton">Add Board</button></Link>
     </div>
   )
 

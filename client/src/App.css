@@ -1,7 +1,9 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap);
+
 .AddButton{
   background-color: rgb(233, 198, 41);
   border-radius: 3px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 10px;
@@ -40,6 +42,7 @@
   text-align: center;
   background-color: #202020;
   color: white;
+  border: 2px solid white;
 }
 
 .Button{
@@ -60,13 +63,15 @@
   margin-top: 20px;
   width: 450px;
   height: 100%;
-  justify-content: space-between;
+  justify-content: center;
+  
 }
 
 .Card{
   background-color: rgb(219, 46, 89);
   border-radius: 3px;
   margin-right: 5px;
+  margin-bottom : 10px;
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 10px;
@@ -82,8 +87,25 @@
   background-color: #202020;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   display: flex;
   color: #202020;
+}
+
+h1{
+  font-family: "Lato";
+}
+
+h2{
+  font-family: "Lato";
+  font-weight: 300;
+}
+
+.TextBox{
+  width : 100%;
+  margin-top: 10px;
+  height : 10px;
+  background-color: #202020;
 }
 
 .ValidationBox{
@@ -91,4 +113,9 @@
   padding-top: 5px;
   padding-bottom: 5px;
   text-align: center;
+}
+
+.Yellow{
+  background-color: rgb(255, 187, 0);
+  color: black;
 }
